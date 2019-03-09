@@ -1,0 +1,14 @@
+{
+  "name": "tic-tac-toc-v5",
+  "version": "1.0.0",
+  "description": "Classic Tic-Tac-Toe game done in javascript. Player vs Computer mode.",
+  "main": "app.js",
+  "scripts": {
+    "compile-sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "author": "Yugesh Kekre",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

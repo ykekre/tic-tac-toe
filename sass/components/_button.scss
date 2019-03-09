@@ -1,0 +1,42 @@
+
+a.btn {
+
+  display: flex;
+  justify-content: space-around;
+  backface-visibility: hidden;
+  padding: 1rem 1rem;
+
+  &--score-card {
+    font-size: 300%;
+    width: 30%;
+    background-color: $color-white-light;
+    color: $color-grey-light;
+  }
+
+
+  &:link,
+  &:visited {
+    border: 1px solid $color-box-shadow-grey;
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px $color-box-shadow-grey;
+
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 4px $color-box-shadow-grey;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 2px $color-box-shadow-grey;
+  }
+
+  &.btn--active {
+    box-shadow: 0px 3px 3px $color-yellow-dark;
+  }
+}
+
+

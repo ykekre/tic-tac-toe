@@ -1,0 +1,186 @@
+@keyframes winner-card {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-flow: column; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #545454; }
+
+html {
+  font-size: 62.5%; }
+
+.header__title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: oblique;
+  color: #237984dc;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+.ex,
+.ohh {
+  font-weight: 500; }
+
+.col-1-of-3 .ohh {
+  font-size: 7rem;
+  /* color: #B48A16; */
+  /* color: #33389B; */
+  /* COLOR: #6c45a7cc */
+  /* color: #8B67BF; */
+  color: #6096b7; }
+
+.col-1-of-3 .ex {
+  font-size: 6rem;
+  color: #8B67BF; }
+
+.header {
+  height: 40vh;
+  background-color: #fff6a925; }
+  .header__title {
+    margin-top: 2.5rem; }
+  .header__score-cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 2.5rem; }
+  .header__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 2.5rem; }
+    .header__display--msg {
+      font-size: 1.8rem; }
+    .header__display a.btn--restart {
+      font-size: 200%;
+      padding: 1rem 1rem;
+      background-color: #FFDA8B;
+      color: #DAB058;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 1rem; }
+    .header__display a.btn--restart:hover {
+      box-shadow: 0 4px 4px #54545421; }
+
+main.grid-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+  height: 50vh;
+  background: linear-gradient(to bottom right, rgba(243, 157, 18, 0.7), rgba(241, 196, 15, 0.7), rgba(230, 125, 34, 0.7)); }
+  main.grid-container .show {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: winner-card 3s ease; }
+  main.grid-container .grid {
+    position: absolute;
+    left: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    main.grid-container .grid.hide {
+      opacity: 0;
+      animation: fade-out 3s; }
+    main.grid-container .grid .row {
+      width: 100%;
+      height: 10rem;
+      display: flex; }
+      main.grid-container .grid .row .col-1-of-3 {
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      main.grid-container .grid .row .col-1-of-3:nth-child(2) {
+        border-left: 5px solid #DEB131;
+        border-right: 5px solid #DEB131; }
+    main.grid-container .grid .row:nth-child(2) {
+      border-top: 5px solid #DEB131;
+      border-bottom: 5px solid #DEB131; }
+
+a.btn {
+  display: flex;
+  justify-content: space-around;
+  backface-visibility: hidden;
+  padding: 1rem 1rem; }
+  a.btn--score-card {
+    font-size: 300%;
+    width: 30%;
+    background-color: #FFFDE8;
+    color: #545454; }
+  a.btn:link, a.btn:visited {
+    border: 1px solid #54545421;
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px #54545421; }
+  a.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 4px #54545421; }
+  a.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 2px #54545421; }
+  a.btn.btn--active {
+    box-shadow: 0px 3px 3px #F2C35C; }
+
+.winner {
+  /* position: absolute; */
+  display: none;
+  z-index: 15; }
+  .winner .hide {
+    display: none; }
+  .winner__header {
+    font-size: 6rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2.5rem 0;
+    font-weight: 700;
+    font-style: oblique;
+    /* color: #6c45a7e1; */
+    color: #237984dc; }
+  .winner__icon {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    color: #545454; }

@@ -1,0 +1,32 @@
+
+.winner {
+  /* position: absolute; */
+  display: none;
+  z-index: 15;
+
+  .hide {
+    display: none;
+
+  }
+
+  &__header {
+    font-size: 6rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2.5rem 0;
+    font-weight: 700;
+    font-style: oblique;
+    /* color: #6c45a7e1; */
+    color: $color-blue-light;
+  }
+
+  &__icon {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    color: $color-grey-light;
+  }
+
+}
+
+

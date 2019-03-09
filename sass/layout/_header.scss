@@ -1,0 +1,51 @@
+
+.header {
+  height: 40vh;
+  background-color: $color-grey-dark;
+
+
+  &__title {
+    margin-top: 2.5rem;
+  }
+
+  &__score-cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 2.5rem;
+
+  }
+
+  &__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 2.5rem;
+
+    &--msg {
+      font-size: 1.8rem;
+    }
+
+    & a.btn--restart {
+      font-size: 200%;
+      padding: 1rem 1rem;
+      background-color: $color-yellow-light;
+      color: $color-yellow-light-1;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 1rem;
+
+      }
+
+    & a.btn--restart:hover {
+        box-shadow: 0 4px 4px $color-box-shadow-grey;
+      }
+  }
+}
+

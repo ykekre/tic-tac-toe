@@ -1,0 +1,78 @@
+
+main.grid-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+  height: 50vh;
+  background: linear-gradient(to bottom right, rgba( $color-gradient-first, 0.7), rgba( $color-gradient-second, 0.7), rgba( $color-gradient-third, 0.7));
+
+  .show {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: winner-card 3s ease;
+
+  }
+
+  .grid {
+      position: absolute;
+      left: 5%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 90%;
+      height: 90%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &.hide {
+        opacity: 0;
+        animation: fade-out 3s;
+      }
+
+      .row {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+
+        .col-1-of-3 {
+          width: 10rem;
+          height: 10rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .col-1-of-3:nth-child(2) {
+          border-left: 5px solid $color-yellow-dark-1;
+          border-right: 5px solid $color-yellow-dark-1;
+
+        }
+      }
+
+      .row:nth-child(2) {
+        border-top: 5px solid $color-yellow-dark-1;
+        border-bottom: 5px solid $color-yellow-dark-1;
+
+      }
+    }
+}
+
+
+
+
+
+
+
+
+

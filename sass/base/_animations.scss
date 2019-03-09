@@ -1,0 +1,22 @@
+@keyframes winner-card {
+
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+
+
+  100% {
+    transform : translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

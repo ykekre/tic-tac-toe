@@ -1,0 +1,42 @@
+body {
+
+  font-family: 'Raleway', sans-serif;
+  color: $color-grey-light;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: oblique;
+    color: $color-blue-light;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+}
+
+.ex,
+.ohh {
+  font-weight: 500;
+}
+
+.col-1-of-3 .ohh {
+  font-size: 7rem;
+  /* color: #B48A16; */
+  /* color: #33389B; */
+  /* COLOR: #6c45a7cc */
+  /* color: #8B67BF; */
+  color: $color-blue-light-1;
+}
+
+.col-1-of-3 .ex {
+  font-size: 6rem;
+  color: $color-blue-dark;
+}

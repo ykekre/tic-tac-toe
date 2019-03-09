@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/queries.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header__title">HUMAN VS MACHINE TIC-TAC-TOE</h1>
+    <div class="header__score-cards">
+
+      <a href="#" class="btn btn--score-card btn--ex btn--active">
+        <span class="icon"><i class="fas fa-times"></i></span><span class="xScore">&dash;</span></a>
+      <a href="#" class="btn btn--score-card btn--ohh">
+        <span class="icon"><i class="far fa-circle"></i></span><span class="oScore">&dash;</span></a>
+
+    </div>
+      <div class="header__display">
+        <h3 class="header__display--msg">Choose your weapon of choice human!</h3>
+
+        <a href="#" class="btn btn--restart">RESTART GAME</a>
+      </div>
+
+  </header>
+
+  <main class="grid-container">
+    <div class="grid">
+      <div class="row row-1">
+        <div class="col-1-of-3 cell-0">
+
+        </div>
+        <div class="col-1-of-3 cell-1 ">
+
+        </div>
+        <div class="col-1-of-3 cell-2">
+
+
+        </div>
+
+      </div>
+      <div class="row row-2 ">
+        <div class="col-1-of-3 cell-3">
+
+        </div>
+        <div class="col-1-of-3 cell-4">
+
+        </div>
+        <div class="col-1-of-3 cell-5">
+
+        </div>
+
+      </div>
+      <div class="row row-3 ">
+        <div class="col-1-of-3 cell-6">
+
+        </div>
+        <div class="col-1-of-3 cell-7">
+
+        </div>
+        <div class="col-1-of-3 cell-8">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="winner">
+      <h1 class="winner__header">WINNER  </h1>
+      <div class="winner__icon js--o">
+        O
+      </div>
+      <div class="winner__icon js--x">
+        X
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+  .header__title {
+    font-size : 3rem;
+  }
+
+  a.btn--score-card {
+    font-size: 250%;
+  }
+
+  .winner__header {
+    font-size: 5rem;
+  }
+
+  .winner__icon {
+    font-size: 7rem;
+  }
+
+  .col-1-of-3 .ex {
+    font-size: 5rem;
+  }
+
+  .col-1-of-3 .ohh {
+    font-size: 6rem;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  .header {
+    margin-bottom: 6vh;
+  }
+  main.grid-container {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  main.grid-container .grid .row {
+    height: 8rem;
+  }
+
+  main.grid-container .grid .row  .col-1-of-3{
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .col-1-of-3 .ex {
+    font-size: 4rem;
+  }
+
+  .col-1-of-3 .ohh {
+    font-size: 5rem;
+  }
+
+  .winner__header {
+    font-size: 4rem;
+  }
+
+  .winner__icon {
+    font-size: 6rem;
+  }
+
+  a.btn--score-card {
+    width: 40%;
+  }
+}
