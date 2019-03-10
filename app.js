@@ -396,7 +396,7 @@ function  restartGame() {
     elements["win-x"].classList.remove('hide');
 
   //* 6 Change display message
-    display('Start game or select player');
+    display('Start the game');
 
   //*7 Reset result header message in winer card
   elements["result-h1"].textContent = "";
