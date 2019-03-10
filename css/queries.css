@@ -1,4 +1,41 @@
+@media only screen and (min-height: 940px) {
 
+.header {
+  margin-bottom: 0;
+  height: 30vh;
+}
+
+main.grid-container {
+  margin-top: 0;
+}
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .header__title {
+    font-size : 4rem;
+  }
+  a.btn--score-card {
+    width: 20%;
+    font-size: 250%;
+  }
+  .winner__header {
+    font-size: 5rem;
+  }
+
+  .winner__icon {
+    font-size: 7rem;
+  }
+
+  .col-1-of-3 .ex {
+    font-size: 5rem;
+  }
+
+  .col-1-of-3 .ohh {
+    font-size: 6rem;
+  }
+}
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
 
@@ -27,7 +64,7 @@
   }
 }
 
-
+/* Small phones to small tablets: */
 @media only screen and (max-width: 576px) {
 
   .header {
@@ -65,5 +102,59 @@
 
   a.btn--score-card {
     width: 40%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .header__title {
+    font-size: 2rem;
+  }
+  .header {
+    margin-bottom: 5vh;
+  }
+
+  .header__display--msg {
+    font-size : 1.6rem;
+  }
+
+  .header__display a.btn--restart{
+    font-size: 150%;
+  }
+  main.grid-container {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  main.grid-container .grid .row {
+    height: 6rem;
+  }
+
+  main.grid-container .grid .row  .col-1-of-3{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .col-1-of-3 .ex {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .col-1-of-3 .ohh {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .winner__header {
+    font-size: 3rem;
+  }
+
+  .winner__icon {
+    font-size: 5rem;
+  }
+
+  a.btn--score-card {
+    width: 40%;
+    font-size: 200%;
   }
 }

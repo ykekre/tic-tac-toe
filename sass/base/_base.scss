@@ -7,7 +7,8 @@
 
 body {
   position: relative;
-  height: 100vh;
+ backface-visibility: hidden;
   display: flex;
   flex-flow: column;
+
 }

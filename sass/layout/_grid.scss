@@ -1,10 +1,13 @@
 
 main.grid-container {
   position: relative;
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  // margin-top: 10vh;
+  // margin-bottom: 10vh;
   width: 50vh;
   height: 50vh;
   background: linear-gradient(to bottom right, rgba( $color-gradient-first, 0.7), rgba( $color-gradient-second, 0.7), rgba( $color-gradient-third, 0.7));
@@ -18,25 +21,25 @@ main.grid-container {
     height: 90%;
     margin-left: auto;
     margin-right: auto;
-    animation: winner-card 3s ease;
+    animation: winner-card 4s ease;
 
   }
 
   .grid {
-      position: absolute;
-      left: 5%;
+      // position: absolute;
+      // left: 5%;
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-content: center;
       max-width: 90%;
-      height: 90%;
+      max-height: 90%;
       margin-left: auto;
       margin-right: auto;
 
       &.hide {
         opacity: 0;
-        animation: fade-out 3s;
+        animation: fade-out 4s;
       }
 
       .row {

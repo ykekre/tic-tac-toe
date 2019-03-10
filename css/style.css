@@ -1,6 +1,6 @@
 @keyframes winner-card {
   0% {
-    transform: translateY(10vh);
+    transform: translateY(40%);
     opacity: 0; }
   100% {
     transform: translateY(0);
@@ -19,7 +19,7 @@
 
 body {
   position: relative;
-  height: 100vh;
+  backface-visibility: hidden;
   display: flex;
   flex-flow: column; }
 
@@ -32,7 +32,7 @@ html {
 
 .header__title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 800;
   font-style: oblique;
   color: #237984dc;
@@ -57,13 +57,13 @@ html {
 
 .header {
   height: 40vh;
-  background-color: #fff6a925; }
+  background-color: #fff6a925;
+  margin-bottom: 5vh; }
   .header__title {
     margin-top: 2.5rem; }
   .header__score-cards {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
@@ -77,7 +77,7 @@ html {
     flex-flow: column;
     margin-top: 2.5rem; }
     .header__display--msg {
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     .header__display a.btn--restart {
       font-size: 200%;
       padding: 1rem 1rem;
@@ -91,6 +91,7 @@ html {
 
 main.grid-container {
   position: relative;
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -107,21 +108,19 @@ main.grid-container {
     height: 90%;
     margin-left: auto;
     margin-right: auto;
-    animation: winner-card 3s ease; }
+    animation: winner-card 4s ease; }
   main.grid-container .grid {
-    position: absolute;
-    left: 5%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-content: center;
     max-width: 90%;
-    height: 90%;
+    max-height: 90%;
     margin-left: auto;
     margin-right: auto; }
     main.grid-container .grid.hide {
       opacity: 0;
-      animation: fade-out 3s; }
+      animation: fade-out 4s; }
     main.grid-container .grid .row {
       width: 100%;
       height: 10rem;
@@ -146,7 +145,7 @@ a.btn {
   padding: 1rem 1rem; }
   a.btn--score-card {
     font-size: 300%;
-    width: 30%;
+    width: 15%;
     background-color: #FFFDE8;
     color: #545454; }
   a.btn:link, a.btn:visited {
@@ -165,9 +164,14 @@ a.btn {
     box-shadow: 0px 3px 3px #F2C35C; }
 
 .winner {
-  /* position: absolute; */
+  position: absolute;
+  left: 5%;
   display: none;
-  z-index: 15; }
+  z-index: 15;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto; }
   .winner .hide {
     display: none; }
   .winner__header {
