@@ -3,7 +3,7 @@
    height: 40vh;
   background-color: $color-grey-dark;
   margin-bottom:5vh;
- 
+
   &__title {
     margin-top: 2.5rem;
   }
@@ -41,11 +41,16 @@
       text-decoration: none;
       margin-top: 1rem;
 
-      }
-
-    & a.btn--restart:hover {
+      &:hover {
         box-shadow: 0 4px 4px $color-box-shadow-grey;
       }
+
+      &.hide {
+        display: none !important;
+        margin-top: 0;
+      }
+      }
+
   }
 }
 

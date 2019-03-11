@@ -86,8 +86,11 @@ html {
       font-weight: 500;
       text-decoration: none;
       margin-top: 1rem; }
-    .header__display a.btn--restart:hover {
-      box-shadow: 0 4px 4px #54545421; }
+      .header__display a.btn--restart:hover {
+        box-shadow: 0 4px 4px #54545421; }
+      .header__display a.btn--restart.hide {
+        display: none !important;
+        margin-top: 0; }
 
 main.grid-container {
   position: relative;
