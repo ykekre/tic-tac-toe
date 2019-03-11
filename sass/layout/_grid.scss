@@ -21,7 +21,7 @@ main.grid-container {
     height: 90%;
     margin-left: auto;
     margin-right: auto;
-    animation: winner-card 4s ease;
+    animation: winner-card 2.5s ease;
 
   }
 
@@ -39,7 +39,7 @@ main.grid-container {
 
       &.hide {
         opacity: 0;
-        animation: fade-out 4s;
+        animation: fade-out 2.5s;
       }
 
       .row {
